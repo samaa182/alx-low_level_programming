@@ -6,18 +6,20 @@ nclude "main.h"
  */
 void rev_string(char *s)
 {
-	int l, i;
-	char temp;
+	int i;
+	int temp = 0;
 
 	/*find string length without null char */
-	for (l = 0; s[l] != '\0'; ++l)
+	for (i = 0; s[i] != '\0'; i++)
 		;
 
 	/*swap the string by looping to half the string */
-	for (i = 0; i < l / 2; i++)
+	for (i = 0; i < temp / 2; i++)
 	{
-		temp = s[i];
-		s[i] = s[l - 1 - i]; /*-1 becouse the arrsy starts from 0 */
-		s[l - 1 - i] = temp;
+		char j;
+
+		j = s[i];
+		s[i] = s[temp - 1 - i]; /*-1 becouse the arrsy starts from 0 */
+		s[temp - 1 - i] = j;
 	}
 }
