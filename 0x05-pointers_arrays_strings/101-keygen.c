@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdib.h>
+#include <stdlib.h>
 #include <time.h>
 /**
  * main - generates randim passwords for 101-crackme
