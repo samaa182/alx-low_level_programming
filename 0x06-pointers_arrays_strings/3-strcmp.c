@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcmp - compare string values
- * @s1: input value
- * @s2: input value
+ * @s1: input value 1
+ * @s2: input value 2
  * Return: s1[i] - s2[i]
  */
 int _strcmp(char *s1, char *s2)
@@ -10,13 +10,15 @@ int _strcmp(char *s1, char *s2)
 	int i;
 
 	i = 0;
-	while (s1[i] != s2[i] != '\0')
+	while (*s1)
 	{
-		if (s1[i] != s2[i])
+		if (*s1 != *s2)
 		{
-			return (s1[i] - s2[i]);
+			equal = ((int)*s1 - 48) - ((int)*s2 - 48);
+			break;
 		}
-		i++;
+		s1++;
+		s2++;
 	}
-	return (0);
+	return (i);
 }
