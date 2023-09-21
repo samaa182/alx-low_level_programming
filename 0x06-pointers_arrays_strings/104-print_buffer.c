@@ -5,7 +5,7 @@
  * @n: integer
  * Return: 1 if true, 0 if false
  */
-int is PrintableASCII(int n)
+int isPrintableASCII(int n)
 {
 	return (n >= 32 && n <= 126);
 }
@@ -71,5 +71,5 @@ void print_buffer(char *b, int size)
 		}
 
 	} else
-		print("\n");
+		printf("\n");
 }
