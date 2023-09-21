@@ -6,8 +6,8 @@
  */
 char *leet(char *c)
 {
-	char *co = c;
-	char key[] = {'A', 'E', 'O', 'Z', 'L'};
+	char *cp = c;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
 	int value[] = {4, 3, 0, 7, 1};
 	unsigned int i;
 
