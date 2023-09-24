@@ -32,7 +32,7 @@ int main(void)
 		}
 		firstDigit++;
 	}
-	putcahr('\n');
+	putchar('\n');
 
 	return (0);
 }
