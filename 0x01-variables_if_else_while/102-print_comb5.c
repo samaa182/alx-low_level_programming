@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	int firstDidit = 0, secondDigit;
+	int firstDigit = 0, secondDigit;
 
 	while (firstDigit <= 99)
 	{
-		secondDigit = firstDidit;
+		secondDigit = firstDigit;
 		while (secondDigit <= 99)
 		{
 			if (secondDigit != firstDigit)
