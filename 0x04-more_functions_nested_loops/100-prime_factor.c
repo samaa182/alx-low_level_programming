@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * sqrt - finds the square root
+ * _sqrt - finds the square root
+ * Description: find sgrt
  * @x: input number
  * Return: square root of x
  */
@@ -20,8 +21,9 @@ double _sqrt(double x)
 }
 
 /**
- * largest-prime_factor - finds and prints the largest
+ * largest_prime_factor - finds and prints the largest
  * prime factor of number (num)
+ * Description: print largest factor
  * @num: number to find
  */
 void largest_prime_factor(long int num)
@@ -48,6 +50,7 @@ void largest_prime_factor(long int num)
 }
 /**
  * main - entry point
+ * Description: return 0
  * Return: Always 0
  */
 int main(void)
