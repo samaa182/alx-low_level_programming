@@ -4,17 +4,17 @@
  * @x: input number
  * Return: square root of x
  */
-double sqrt(double x)
+double _sqrt(double x)
 {
-	float sqrt, tap;
+	float sqrt, tmp;
 
 	sqrt = x / 2;
-	tap = 0;
+	tmp = 0;
 
-	while (sqrt != tap)
+	while (sqrt != tmp)
 	{
-		tap = sqrt;
-		sqrt = (x / tap + tap) / 2;
+		tmp = sqrt;
+		sqrt = (x / tmp + tmp) / 2;
 	}
 	return (sqrt);
 }
@@ -45,4 +45,14 @@ void largest_prime_factor(long int num)
 	if (num > 2)
 		largest = num;
 	printf("%d\n", largest);
+}
+/**
+ * main - entry point
+ * Return: Always 0
+ */
+int main(void)
+{
+	largest_prime_factor(612852475143);
+
+	return (0);
 }
