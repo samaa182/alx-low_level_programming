@@ -14,17 +14,17 @@ int main(void)
 	for (num = 1; num <= 100; num++)
 	{
 		if (num % 3 == 0 && !(num % 5 == 0))
-			printf("fizz");
+			printf("Fizz");
 		else if (num % 5 == 0 && !(num % 3 == 0))
-			printf("buzz");
+			printf("Buzz");
 		else if (num % 3 == 0 && num % 5 == 0)
-			printf("fizzbuzz");
+			printf("FizzBuzz");
 		else
 			printf("%d", num);
 		if (num != 100)
 			printf(" ");
 		else
-			printf("\n");
+			printf('\n');
 	}
 	return (0);
 }
