@@ -1,11 +1,12 @@
-#include "lists.h"
-void __attribute__ ((constructor)) _constructor(void);
+#include <stdio.h>
+
+void __attribute__((constructor)) hare(void);
 /**
- * _constructor - executes before main()
+ * hare - executes before main()
  * Return: void
  */
-void _constructor(void)
+void hare(void)
 {
-	printf("you're beat! and yet, you must allow,\n"
-			"I bore my house upon my back!\n");
+printf("You're beat! and yet, you must allow,\n"
+"I bore my house upon my back!\n");
 }
